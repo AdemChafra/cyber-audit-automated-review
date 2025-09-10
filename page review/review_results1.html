@@ -1,0 +1,274 @@
+
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Audit Review Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background: #1e1e2f;
+    color: #f0f0f0;
+}
+h1 {
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f5f5f5;
+}
+.summary {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem auto 2rem auto;
+    gap: 1rem;
+}
+.summary-card {
+    background: #2a2a40;
+    padding: 1.2rem 1.8rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    text-align: center;
+    min-width: 140px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.summary-card:hover { transform: translateY(-5px); box-shadow: 0 12px 30px rgba(0,0,0,0.5); }
+.summary-card .count { font-size: 2rem; font-weight: 700; color: #f5f5f5; }
+.summary-card .label { font-size: 1rem; margin-top: 0.3rem; color: #a5a5a5; }
+h2 {
+    margin-top: 2rem;
+    cursor: pointer;
+    padding: 0.8rem 1rem;
+    background: linear-gradient(90deg,#4f46e5,#3b82f6);
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+h2:hover { background: linear-gradient(90deg,#6366f1,#60a5fa); }
+.content {
+    display: none;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    background: #2a2a40;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    transition: max-height 0.4s ease;
+}
+.issue {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1rem;
+    border-left: 6px solid #ccc;
+    background: #3b3b58;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.issue:hover { transform: translateY(-2px); box-shadow: 0 6px 15px rgba(0,0,0,0.5); }
+.issue.clarity { border-color: #facc15; }
+.issue.coherence { border-color: #10b981; }
+.issue.jargon { border-color: #ef4444; }
+.issue.recommendation { border-color: #3b82f6; }
+.issue.formatting { border-color: #8b5cf6; }
+.issue.missing_info { border-color: #14b8a6; }
+.issue.parsing_error { border-color: #9ca3af; }
+.badge {
+    padding: 3px 10px;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 0.85em;
+    font-weight: 600;
+    margin-right: 6px;
+}
+.badge.clarity { background: #facc15; color:#1e1e2f; }
+.badge.coherence { background: #10b981; }
+.badge.jargon { background: #ef4444; }
+.badge.recommendation { background: #3b82f6; }
+.badge.formatting { background: #8b5cf6; }
+.badge.missing_info { background: #14b8a6; }
+.badge.parsing_error { background: #9ca3af; }
+p { margin: 0.3rem 0; }
+i { color: #d1d5db; }
+.chart {
+    margin-top: 0.5rem;
+    height: 8px;
+    display: flex;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.chart-bar {
+    height: 100%;
+}
+.chart-bar.clarity { background: #facc15; }
+.chart-bar.coherence { background: #10b981; }
+.chart-bar.jargon { background: #ef4444; }
+.chart-bar.recommendation { background: #3b82f6; }
+.chart-bar.formatting { background: #8b5cf6; }
+.chart-bar.missing_info { background: #14b8a6; }
+</style>
+</head>
+<body>
+
+<h1>Audit Review Dashboard (First 10 Pages)</h1>
+
+<div class="summary">
+
+  <div class="summary-card">
+    <div class="count">2</div>
+    <div class="label">Formatting</div>
+  </div>
+
+  <div class="summary-card">
+    <div class="count">3</div>
+    <div class="label">Clarity</div>
+  </div>
+
+  <div class="summary-card">
+    <div class="count">2</div>
+    <div class="label">Jargon</div>
+  </div>
+
+  <div class="summary-card">
+    <div class="count">1</div>
+    <div class="label">Missing_info</div>
+  </div>
+
+</div>
+
+
+<h2>Page 1 (4 issues)</h2>
+<div class="content">
+  
+  
+  
+      
+  
+      
+  
+      
+  
+      
+  
+  <div class="chart">
+      
+          <div class="chart-bar formatting" style="width:25.0%"></div>
+      
+          <div class="chart-bar clarity" style="width:25.0%"></div>
+      
+          <div class="chart-bar jargon" style="width:25.0%"></div>
+      
+          <div class="chart-bar missing_info" style="width:25.0%"></div>
+      
+  </div>
+  
+    <div class="issue formatting">
+      <p><span class="badge formatting">formatting</span> - <b>minor</b></p>
+      <p><b>Text:</b> </p>
+      <p><b>Suggestion:</b> Use a consistent font and formatting throughout the document.</p>
+      <p><i>The use of multiple font styles and sizes can make the text difficult to read.</i></p>
+    </div>
+  
+    <div class="issue clarity">
+      <p><span class="badge clarity">clarity</span> - <b>minor</b></p>
+      <p><b>Text:</b> Tests d'intrusion de la plateforme confidentiel</p>
+      <p><b>Suggestion:</b> Consider adding a brief description or context for this phrase to improve clarity.</p>
+      <p><i>The text is unclear and may not be easily understandable.</i></p>
+    </div>
+  
+    <div class="issue jargon">
+      <p><span class="badge jargon">jargon</span> - <b>minor</b></p>
+      <p><b>Text:</b> Rapport technique</p>
+      <p><b>Suggestion:</b> Consider adding a definition or explanation for technical terms to improve accessibility.</p>
+      <p><i>The use of jargon may make the text difficult to understand for non-experts.</i></p>
+    </div>
+  
+    <div class="issue missing_info">
+      <p><span class="badge missing_info">missing_info</span> - <b>minor</b></p>
+      <p><b>Text:</b> </p>
+      <p><b>Suggestion:</b> Consider adding a table of contents or summary to provide an overview of the report's content.</p>
+      <p><i>The lack of introductory information may make it difficult for readers to navigate the document.</i></p>
+    </div>
+  
+</div>
+
+<h2>Page 2 (3 issues)</h2>
+<div class="content">
+  
+  
+  
+      
+  
+      
+  
+      
+  
+  <div class="chart">
+      
+          <div class="chart-bar clarity" style="width:33.33333333333333%"></div>
+      
+          <div class="chart-bar jargon" style="width:33.33333333333333%"></div>
+      
+          <div class="chart-bar formatting" style="width:33.33333333333333%"></div>
+      
+  </div>
+  
+    <div class="issue clarity">
+      <p><span class="badge clarity">clarity</span> - <b>minor</b></p>
+      <p><b>Text:</b> DOCUMENT CONFIDENTIEL Document appartenant à Forvis Mazars</p>
+      <p><b>Suggestion:</b> Consider rephrasing this to make it clearer what the document is about.</p>
+      <p><i>The title is unclear and does not provide any information about the content of the report.</i></p>
+    </div>
+  
+    <div class="issue jargon">
+      <p><span class="badge jargon">jargon</span> - <b>minor</b></p>
+      <p><b>Text:</b> confidentiel</p>
+      <p><b>Suggestion:</b> Consider explaining what 'confidentiel' means in this context.</p>
+      <p><i>The use of jargon may confuse readers who are not familiar with the term.</i></p>
+    </div>
+  
+    <div class="issue formatting">
+      <p><span class="badge formatting">formatting</span> - <b>minor</b></p>
+      <p><b>Text:</b> Page 2 / 97</p>
+      <p><b>Suggestion:</b> Consider using a more consistent formatting for page numbers.</p>
+      <p><i>The formatting of the page number is inconsistent with other pages.</i></p>
+    </div>
+  
+</div>
+
+<h2>Page 3 (1 issues)</h2>
+<div class="content">
+  
+  
+  
+      
+  
+  <div class="chart">
+      
+          <div class="chart-bar clarity" style="width:100.0%"></div>
+      
+  </div>
+  
+    <div class="issue clarity">
+      <p><span class="badge clarity">clarity</span> - <b>minor</b></p>
+      <p><b>Text:</b> (*) A: Action – I: Information </p>
+      <p><b>Suggestion:</b> Use a clear and concise label for this column instead of an asterisk (*) followed by ambiguous letters (A, I)</p>
+      <p><i>The reader may be confused about the purpose of this column without further explanation</i></p>
+    </div>
+  
+</div>
+
+
+<script>
+var coll = document.getElementsByTagName("h2");
+for (var i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    var content = this.nextElementSibling;
+    content.style.display = (content.style.display === "block") ? "none" : "block";
+  });
+}
+</script>
+
+</body>
+</html>

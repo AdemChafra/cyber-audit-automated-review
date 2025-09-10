@@ -1,0 +1,81 @@
+[
+  {
+    "page": 1,
+    "issues": [
+      {
+        "issue_type": "formatting",
+        "severity": "minor",
+        "problematic_text": "",
+        "suggestion": "Use a consistent font and formatting throughout the document.",
+        "page": "1",
+        "category_explanation": "The use of multiple font styles and sizes can make the text difficult to read."
+      },
+      {
+        "issue_type": "clarity",
+        "severity": "minor",
+        "problematic_text": "Tests d'intrusion de la plateforme confidentiel",
+        "suggestion": "Consider adding a brief description or context for this phrase to improve clarity.",
+        "page": "1",
+        "category_explanation": "The text is unclear and may not be easily understandable."
+      },
+      {
+        "issue_type": "jargon",
+        "severity": "minor",
+        "problematic_text": "Rapport technique",
+        "suggestion": "Consider adding a definition or explanation for technical terms to improve accessibility.",
+        "page": "1",
+        "category_explanation": "The use of jargon may make the text difficult to understand for non-experts."
+      },
+      {
+        "issue_type": "missing_info",
+        "severity": "minor",
+        "problematic_text": "",
+        "suggestion": "Consider adding a table of contents or summary to provide an overview of the report's content.",
+        "page": "1",
+        "category_explanation": "The lack of introductory information may make it difficult for readers to navigate the document."
+      }
+    ]
+  },
+  {
+    "page": 2,
+    "issues": [
+      {
+        "issue_type": "clarity",
+        "severity": "minor",
+        "problematic_text": "DOCUMENT CONFIDENTIEL Document appartenant à Forvis Mazars",
+        "suggestion": "Consider rephrasing this to make it clearer what the document is about.",
+        "page": "2",
+        "category_explanation": "The title is unclear and does not provide any information about the content of the report."
+      },
+      {
+        "issue_type": "jargon",
+        "severity": "minor",
+        "problematic_text": "confidentiel",
+        "suggestion": "Consider explaining what 'confidentiel' means in this context.",
+        "page": "2",
+        "category_explanation": "The use of jargon may confuse readers who are not familiar with the term."
+      },
+      {
+        "issue_type": "formatting",
+        "severity": "minor",
+        "problematic_text": "Page 2 / 97",
+        "suggestion": "Consider using a more consistent formatting for page numbers.",
+        "page": "2",
+        "category_explanation": "The formatting of the page number is inconsistent with other pages."
+      }
+    ]
+  },
+  {
+    "page": 3,
+    "issues": [
+      {
+        "issue_type": "clarity",
+        "severity": "minor",
+        "problematic_text": "(*) A: Action – I: Information ",
+        "suggestion": "Use a clear and concise label for this column instead of an asterisk (*) followed by ambiguous letters (A, I)",
+        "page": 3,
+        "category_explanation": "The reader may be confused about the purpose of this column without further explanation"
+      }
+    ]
+  }
+]

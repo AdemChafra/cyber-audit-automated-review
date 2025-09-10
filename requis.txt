@@ -1,3 +1,0 @@
-PyMuPDF
-ollama
-jinja2   # optional for HTML output

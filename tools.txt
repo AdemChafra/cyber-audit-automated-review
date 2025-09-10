@@ -1,0 +1,6 @@
+PyMuPDF
+ollama
+jinja2 
+json
+streamlit
+docx 
